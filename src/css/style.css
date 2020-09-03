@@ -28,6 +28,14 @@ body {
     color: #fff; 
     padding: 5px;
     border-radius: 2px;
+    /* background-color: rgb(49, 49, 49); */
+}
+/* seudo-clases */
+.main-nav__item a:hover{
+    color:blue;
+}
+.main-nav__item a:active {
+    color: red;
 }
 
 section {
