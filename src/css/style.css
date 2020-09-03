@@ -37,6 +37,14 @@ body {
 .main-nav__item a:active {
     color: red;
 }
+/* pseudo-elementos */
+ .main-nav__item::before {
+content: " & ";
+} 
+.main-nav__item::after {
+    content: "/ ";
+}
+
 
 section {
     width: 100vw;
