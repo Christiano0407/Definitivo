@@ -12,6 +12,24 @@ body {
     height: 100vh;
     
 }
+.main-nav {
+ list-style: none;
+ padding-left: 10px;
+ text-decoration: none;
+ margin-top: 10px;
+ background-color: #13a4;
+}
+.main-nav__item {
+   display: inline-block;
+    
+}
+.main-nav__item a {
+    text-decoration: none;
+    color: #fff; 
+    padding: 5px;
+    border-radius: 2px;
+}
+
 section {
     width: 100vw;
     height: 100vh;
