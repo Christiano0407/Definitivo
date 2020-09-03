@@ -7,12 +7,24 @@
     --color1: #fff;
     --color2: #333;
 }
-main {
+/* fuente=16px/75%=12px */
+html {
+    font-size: 75%;
+}
+/* 1rem=12px/html=12=75% */
+h1 {
+ font-size: 3rem;
+}
+/* tamaño heredado de html=12px */
+p {
+    font-size: inherit;
+}
+/* main {
     width:100%;
     height:500px;
     border: 10px solid #333;  
     padding: 20px 35px;
-}
+} */
 /* body {
     width: 100%;
     height: 100vh;
