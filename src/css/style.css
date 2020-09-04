@@ -52,6 +52,16 @@ h1 {
  /* h2 ~ p {
      color: blue;
  } */
+/*  descendientes-genérico */
+/*  div p{
+     color: yellow;
+ } */
+
+/* hijo */
+/* div > h2 {
+    color: orange;
+} */
+
 /* .hola {
     position: relative;
     left: 20px;
