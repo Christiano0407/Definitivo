@@ -16,7 +16,7 @@ body {
     height: 100vh;
     background-color:#fff;
 }
-h1 {
+/* h1 {
     font-family:serif;
     color: var(--color2);
 }
@@ -41,8 +41,18 @@ h1 {
 }
 .nav .blog {
     background-color: #3a4b5f;
-}
+} */
 
+.text1{
+  /*   font-size: 4rem; */
+    /* font-size: 2em; */
+    /* font-size: 18px; tamaño absoluto */
+    /* font-size: 50%; Porcentajes-tomado del html */
+}
+.text-container {
+    /* font-size: 2em; */
+    /* font-size: 2rem; */
+}
 /* combinadores */
 /* Todo valor cerca del p (h2) lo va colorear de rojo */
 /* h2 + p {
