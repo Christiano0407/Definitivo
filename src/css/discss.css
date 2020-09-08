@@ -14,3 +14,49 @@ body {
     width: 100%;
     height: 100vh;
 }
+/* .parents {
+    display: inline-block;
+    border: 3px solid red;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: inline-block;
+}
+#one {
+    background-color: hotpink;
+    position: absolute;
+    top: 1rem;
+}
+#two {
+    background-color: greenyellow;
+    position: relative;
+    top: 1rem;
+} */
+/* #four {
+    background-color: orange;
+    position: absolute;
+    margin-top: 5rem;
+} */
+.parents {
+    display: inline-block;
+    border: 2px solid black;
+}
+.boxs {
+    width: 200px;
+    height: 200px;
+    background-color: paleturquoise;
+    display: inline-block;
+    position: absolute;
+}
+#ones {
+     background-color: rebeccapurple;
+     position: relative;
+     margin-right: 10px auto;
+     margin-top: 20px;
+ } 
+/*  #twoo {
+    background-color: green;
+    position: absolute;
+ } */
