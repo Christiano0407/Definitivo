@@ -9,7 +9,7 @@
 }
 /* fuente=16px/75%=12px */
 html {
-    font-size: 75%;
+    font-size: 62.5%;
 }
 body {
     width: 100%;
@@ -44,6 +44,7 @@ body {
 } */
 
 .text1{
+    font-size: 3.5rem;
   /*   font-size: 4rem; */
     /* font-size: 2em; */
     /* font-size: 18px; tamaño absoluto */
