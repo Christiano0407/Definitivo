@@ -9,5 +9,69 @@ html {
 :root {
     --color01: #fff;
     --color02: #333;
-    
+    --fonts: font-family: neue-haas-unica,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    --color3: #D95284;
+    --color4: #044BD9;
+    --color5: #0442BF;
+    --color6: #0476D9;
+    --color7: #F27E63;
+
+}
+body {
+    width: 100%;
+    height: 100vh;
+    /* display: grid; */
+   /*  grid-template-areas:"header header"
+                        "aside main"
+                         "footer footer"; */
+}
+
+.nav {
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--color3);
+    /* grid-area: header; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  /*   position: fixed; */
+}
+.nav li  {
+display: inline-block;
+margin: 10px 0;
+}
+.nav li a {
+    color: #fff;
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color4);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+.section{
+    grid-column: 1 / 2;
+    background-color: var(--color5);
+}
+.section-two {
+    grid-column: 2 / 2;
+    background-color: var(--color6);
+}
+.section-two p {
+    font-size: 2rem;
+    color: #fff;
+    margin: 1rem 2rem;
+}
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--color7);
 }
