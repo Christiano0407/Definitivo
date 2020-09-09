@@ -1,3 +1,5 @@
+
+    /* LAYOUT SHIFTER */
 /*  @media screen and (max-width: 1024px) {
 
 }
@@ -16,6 +18,7 @@
     }
 } */
 
+/* MOSTLY FLUID */
 @media screen and (min-width: 680px) {
 .c2, .c3, .c4 {
     width: 50%;
