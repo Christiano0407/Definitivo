@@ -21,3 +21,29 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+.container {
+     
+    display: flex;
+    flex-wrap: wrap;
+}
+.c1,.c2,.c3, .c4,.c5 {
+    width: 100vw;
+  /*   height: 50%vh; */
+    min-width: 150px;
+    height: 20vh; 
+}
+.c1 {
+    background-color: var(--color-base2);
+}
+.c2 {
+    background-color: var(--color-primario);
+}
+.c3 {
+    background-color: var(--color-base2);
+}
+.c4 {
+    background-color: var(--color-secundario);
+}
+.c5 {
+    background-color: var(--color-terciario);
+}
