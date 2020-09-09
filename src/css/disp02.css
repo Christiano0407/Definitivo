@@ -6,27 +6,35 @@
 html {
     font-size: 62.5%;
 }
+/* Variables */
 :root {
-    --color01: #fff;
-    --color02: #333;
-    --fonts: font-family: neue-haas-unica,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    --color3: #D95284;
-    --color4: #044BD9;
-    --color5: #0442BF;
-    --color6: #0476D9;
-    --color7: #F27E63;
+    --color-01: #fff;
+    --color-02: #333;
+    --color-3: #D95284;
+    --color-4: #044BD9;
+    --color-5: #0442BF;
+    --color-6: #0476D9;
+    --color-7: #F27E63;
 
 }
+/* otra opción de poner web-fonts */
+/* @font-face {
+    font-family: neue-haas-unica,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url()
+}; */
 body {
     width: 100%;
     height: 100vh;
     font-size: 1.6rem;
+    /* font-family: neue-haas-unica,sans-serif;
+    font-weight: 400;
+    font-style: normal; */
 }
 .container {
     display: flex;
-    border: .3rem solid var(--color3);
+    border: .3rem solid var(--color-3);
     /* flex-direction: ; */
     /* justify-content: flex-end; */
     flex-wrap: wrap; 
@@ -41,23 +49,30 @@ body {
  flex-basis: 10rem;
 flex-grow: 1;/*  ayuda para acomodar cada contanido responsive */
 }
+p {
+    /*  font-family: var(--fonts-fam);  */
+   /*  font-size: 2rem; */
+     font-family: neue-haas-unica,sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
 .box1 {
-    background-color: var(--color4);
+    background-color: var(--color-4);
    /*  flex-grow: 1; */
 }
 .box2 {
-    background-color: var(--color5);
+    background-color: var(--color-5);
 }
 .box3 {
-    background-color: var(--color6);
+    background-color: var(--color-6);
 }
 .box4 {
-    background-color: var(--color7);
+    background-color: var(--color-7);
 }
 .box5 {
-    background-color: var(--color02);
+    background-color: var(--color-02);
 }
 .box6 {
-    background-color: var(--color3);
+    background-color: var(--color-3);
    /*  flex-grow: 1; */
 }
