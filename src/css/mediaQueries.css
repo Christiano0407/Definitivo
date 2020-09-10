@@ -1,6 +1,6 @@
 
     /* LAYOUT SHIFTER */
-/*  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
 
 }
 
@@ -16,10 +16,10 @@
         flex-wrap: nowrap;
         flex-grow: 1;
     }
-} */
+} 
 
 /* MOSTLY FLUID */
-@media screen and (min-width: 680px) {
+/* @media screen and (min-width: 680px) {
 .c2, .c3, .c4 {
     width: 50%;
 }
@@ -43,4 +43,4 @@
    .c5 {
        width: 34%;
    }
-}
+} */
