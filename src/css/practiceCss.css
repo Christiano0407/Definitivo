@@ -98,7 +98,33 @@ header::before {
 .nav-link:hover {
     color: rgba(255,255,255,.9);
 }
-
+.nav-link.current {
+    color: #fff;
+}
+.nav-link i {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.icon-link {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    display: flex;
+    transition: background-color .6s;
+}
+.icon-link:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+.icon-link i {
+    font-size: 2.5rem;
+    color: rgba(255,255,255,.4);
+    margin: auto;
+}
 
 /* .nav {
     width: 100%;
