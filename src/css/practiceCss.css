@@ -139,7 +139,7 @@ main {
 section {
     width: 100%;
     height: 100vh;
-    background-color: #023b31;
+    background-color: #01241d;
 }
 .active .fa-times {
     display: block;
@@ -147,6 +147,15 @@ section {
 .active .fa-bars {
     display: none;
 }
+header .active::before {
+    transform: translate(0,0);
+    opacity: 1;
+    transition: opacity .6s;
+}
+.active .sidebar {
+    transform: translateX(0);
+}
+
 
 /* .nav {
     width: 100%;
