@@ -140,6 +140,11 @@ section {
     width: 100%;
     height: 100vh;
     background-color: #01241d;
+    background-image: url(../images/andrae-ricketts-0_la3_Slfwk-unsplash.jpg);
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .active .fa-times {
     display: block;
@@ -157,6 +162,20 @@ header .active::before {
 }
 .active .zoom-content {
     transform: translate3d(0,0,-25rem);
+}
+@media screen and (max-width: 450px) {
+    .nav-list {
+        line-height: 5rem;
+    }
+    .hamburger {
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+}
+@media screen and (max-width: 450px ) {
+ .sidebar {
+     width: 25rem;
+ }
 }
 
 
