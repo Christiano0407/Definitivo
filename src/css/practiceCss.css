@@ -57,7 +57,7 @@ header::before {
     transition: opacity .6s transform .2s .6s;
 }
 .sidebar {
-    background-color:#38f9d7;
+    background-color:#023b31;
     position: fixed;
     top: 0;
     left: 0;
@@ -68,7 +68,37 @@ header::before {
     justify-content: space-between;
     padding: 1.6rem;
     z-index: 1000;
+  /*   transform: translateX(-100%); */
+    transition: transform .6s cubic-bezier(0.995, 0.05, 0.795, 0.035);
 }
+.nav-list {
+    list-style: none;
+}
+.nav-item {
+    position: relative;
+}
+.nav-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #43e97b 0%, #38f9d7 100% );
+}
+.nav-link {
+    display: block;
+    font-size: 1.3rem;
+    color: rgba(255,255,255,.4);
+    text-transform: uppercase;
+    line-height: 8rem;
+    letter-spacing: .3rem;
+    transition: color .6s;
+}
+.nav-link:hover {
+    color: rgba(255,255,255,.9);
+}
+
 
 /* .nav {
     width: 100%;
