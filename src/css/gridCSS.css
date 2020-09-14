@@ -21,4 +21,17 @@ body {
     font-family: neue-haas-unica,sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: var(--color-base2);
+}
+section {
+    padding: 5rem 0;
+}
+.container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.pricing-table {
+    display: grid;
 }
