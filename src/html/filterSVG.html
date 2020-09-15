@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="description" content="AyÚda para el SEO"/> -->
+    <!-- <meta name="robots" content="index, follow"/> Ayuda con el SEO, y autorización -->
+    <link rel="shortcut icon" href="../images/circle-small.png">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/eoy0gzf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <!--     <link rel="stylesheet" href="../css/responCss.css" media="screen and (min-width: 768px)"> MediaQueries -->
+    <link rel="stylesheet" href="../css/filterSvg.css">
+    <title>SVG ANIMATION</title>
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <h1>Beautiful Art and Wonderfall Creative Color and Beautiful world and Music</h1>
+       <!--  <svg>
+            <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+                <feTurbulence baseFrequency="0.2 0.3" 
+                result="NOISE" numOctaves="1" id="turbulence" />
+                <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="20"></feDisplacementMap>
+            </filter>
+        </svg> -->
+        <svg>
+            <filter id="noise" x='0%' y='0%' width='100%' height='100%'>
+                <feTurbulence baseFrequency="0.02 0.03" result="NOISE" numOctaves="1" id="turbulence" />
+                <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="20"></feDisplacementMap>
+            </filter>
+        </svg>
+    
+        <div class="overlay">
+            <div class="container">
+                <img src="../images/aud2.jpg" alt="trees" class="pic">
+                <img src="../images/aud2.jpg" alt="guitar" class="pic">
+                <img src="../images/aud2.jpg" alt="cliff" class="pic">
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer></footer>
+ 
+    <script src="../js/appSvg.js"></script>
+</body>
+</html>
