@@ -34,10 +34,22 @@ font-size: 0;
     display: inline-block;
     margin: 0 1.5rem;
 }
-.card .photo img {
+.cards .photo {
     width: 25rem;
     height: 30rem;
     overflow: hidden;
     background-color: var(--color-base2);
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
+    position: relative;
+}
+.cards .photo img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%) scale(1.3);
+    transition: transform 3s ease-in-out;
+}
+.cards .card:hover .photo img {
+    transform: translate(-50%, -50%) scale(1);
 }
