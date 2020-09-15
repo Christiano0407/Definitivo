@@ -29,6 +29,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 1rem;
+    grid-template-areas: 
+    "gallery-p gallery-p gallery-p gallery-p"
+    "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+    "img1 img2 img3 img4"
+    "img5 img6 img3 img7"
 }
 #index-gallery .gallery-img {
     width: 100%;
@@ -40,50 +45,59 @@ body {
 }
 
 #index-gallery p {
-    grid-area: img1;
+    grid-area: gallery-p;
 }
 #index-gallery h2 {
-    grid-area: img1;
-    
+    grid-area: gallery-h2;
+
 }
 
 #index-gallery .img1 {
     grid-area: img1;
-    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+    background-image: url(../images/aud1.jpg);
 
 }
 #index-gallery .img2 {
     grid-area: img2;
-    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+    background-image: url(../images/aud2.jpg);
     
 }
 #index-gallery .img3 {
     grid-area: img3;
-    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
-    
+    background-image: url(../images/aud3.jpg);
+    height: 60rem;
 }
 #index-gallery .img4 {
     grid-area: img4;
-    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+    background-image: url(../images/aud4.jpg);
     
 }
 #index-gallery .img5 {
     grid-area: img5;
-    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+    background-image: url(../images/daniel-korpai-lTb4gJK_l1Q-unsplash.jpg);
     
 }
 #index-gallery .img6 {
     grid-area: img6;
-    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+    background-image: url(../images/daniel-korpai-o1utz9Neufo-unsplash.jpg);
     
 }
 #index-gallery .img7 {
     grid-area: img7;
-    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+    background-image: url(../images/fabian-grohs-mCj7UinqOYQ-unsplash.jpg);
     
 }
-#index-gallery .img8 {
+/* #index-gallery .img8 {
     grid-area: img8;
     background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
     
+} */
+.gallery-img div {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-base2);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
