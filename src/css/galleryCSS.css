@@ -24,3 +24,66 @@ body {
     width: 3rem;
     height: 3rem;
 }
+#index-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}
+#index-gallery .gallery-img {
+    width: 100%;
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#index-gallery p {
+    grid-area: img1;
+}
+#index-gallery h2 {
+    grid-area: img1;
+    
+}
+
+#index-gallery .img1 {
+    grid-area: img1;
+    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+
+}
+#index-gallery .img2 {
+    grid-area: img2;
+    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+    
+}
+#index-gallery .img3 {
+    grid-area: img3;
+    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+    
+}
+#index-gallery .img4 {
+    grid-area: img4;
+    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+    
+}
+#index-gallery .img5 {
+    grid-area: img5;
+    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+    
+}
+#index-gallery .img6 {
+    grid-area: img6;
+    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+    
+}
+#index-gallery .img7 {
+    grid-area: img7;
+    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+    
+}
+#index-gallery .img8 {
+    grid-area: img8;
+    background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+    
+}
