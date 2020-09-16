@@ -17,6 +17,10 @@ if(galleryImages) {
             container.appendChild(newImgWindow);
             newImgWindow.setAttribute("class", "img-window");
             newImgWindow.setAttribute("onclick", "closeImg()");
+
+            let newImg = document.createElement("img");
+            newImgWindow.appendChild(newImg);
+            newImg.setAttribute("src", "../images/" + setNewImgUrl);
         }
     });
 }
