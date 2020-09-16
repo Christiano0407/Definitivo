@@ -7,8 +7,9 @@ if(galleryImages) {
         image.onclick = function() {
             let getElementCss = window.getComputedStyle(image);
             let getFullImgUrl = getElementCss.getPropertyValue("background-image");
-            let getImgUrlPos = getFullImgUrl.split("");
-            alert(getFullImgUrl);
+            let getImgUrlPos = getFullImgUrl.split("/src/images/");
+            let setNewImgUrl = getImgUrlPos[1].replace(`")`, ``);
+            alert(getImgUrlPos[1]);
         }
     });
 }
