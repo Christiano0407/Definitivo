@@ -101,3 +101,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+.gallery-img a {
+    font-family: neue-haas-unica,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.8rem;
+    color: var(--color-base);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.gallery-img div:hover {
+    opacity: 0.9;
+    transition: all ease-in-out;
+}
