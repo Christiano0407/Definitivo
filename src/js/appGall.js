@@ -21,6 +21,7 @@ if(galleryImages) {
             let newImg = document.createElement("img");
             newImgWindow.appendChild(newImg);
             newImg.setAttribute("src", "../images/" + setNewImgUrl);
+            newImg.setAttribute("id", "current-img");
                  
             newImg.onload = function() {
             let imgWidth = this.width;
@@ -51,4 +52,29 @@ if(galleryImages) {
 }
 function closeImg() {
     document.querySelector(".img-window").remove();
+    document.querySelector(".img-btn-prev").remove();
+    document.querySelector(".img-btn-next").remove();
+}
+function changeImg(changeDir) {
+    document.querySelector("#current-img").remove();
+
+    let getImgWindow = document.querySelector(.img-window);
+    let newImg = document.createElement("img");
+    getImgWindow.appendChild(newImg);
+
+    let calcNewImg; 
+    if(changeDir === 1) {
+     calcNewImg = getLatestOpenedImg + 1;
+     if(calcNewImg > galleryImages.length) {
+        calcNewImg = 1;
+     }
+    }
+    else if(changeDir === 0){
+    calcNewImg = getLatestOpenedImg - 1;
+    if(calcNewImg < 1){
+       calcNewImg = galleryImages.length;
+    }
+    }
+
+    newImg.setAttribute("src", "../images/" + calcNewImg + ".jpg")
 }
