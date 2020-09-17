@@ -133,3 +133,18 @@ body {
  max-height: 80vh;
  max-width: 80vw;
 }
+
+/* Next images (js) */
+.img-btn-next {
+    display: block;
+    padding: .6rem 1rem;
+    border-radius: .4rem;
+    background-color: var(--color-base2);
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
