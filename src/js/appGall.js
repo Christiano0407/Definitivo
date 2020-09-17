@@ -24,3 +24,6 @@ if(galleryImages) {
         }
     });
 }
+function closeImg() {
+    document.querySelector(".img-window").remove();
+}
