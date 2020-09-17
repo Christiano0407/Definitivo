@@ -21,6 +21,21 @@ if(galleryImages) {
             let newImg = document.createElement("img");
             newImgWindow.appendChild(newImg);
             newImg.setAttribute("src", "../images/" + setNewImgUrl);
+        
+            let newPrevBtn = document.createElement("a");
+            let btnPrevText = document.createTextNode("Prev");
+            newPrevBtn.appendChild(btnPrevText);
+            container.appendChild(newPrevBtn);
+            newPrevBtn.setAttribute("class", "img-btn-prev");
+            newPrevBtn.setAttribute("onclick", "changeImg()");
+
+            let newNextBtn = document.createElement("a");
+            let btnNextText = document.createTextNode("Next");
+            newNextBtn.appendChild(btnNextText);
+            container.appendChild(newNextBtn);
+            newNextBtn.setAttribute("class", "img-btn-next");
+            newNextBtn.setAttribute("onclick", "changeImg()");
+
         }
     });
 }
