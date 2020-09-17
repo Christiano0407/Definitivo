@@ -58,7 +58,7 @@ function closeImg() {
 function changeImg(changeDir) {
     document.querySelector("#current-img").remove();
 
-    let getImgWindow = document.querySelector(.img-window);
+    let getImgWindow = document.querySelector(".img-window");
     let newImg = document.createElement("img");
     getImgWindow.appendChild(newImg);
 
@@ -76,5 +76,19 @@ function changeImg(changeDir) {
     }
     }
 
-    newImg.setAttribute("src", "../images/" + calcNewImg + ".jpg")
+    newImg.setAttribute("src", "../images/" + calcNewImg + ".jpg");
+    newImg.setAttribute("id", "current-img");
+
+    getLatestOpenedImg = calcNewImg;
+
+    newImg.onload = function() {
+        let imgWidth = this.width;
+        let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;  
+
+        let nextBtn = document.querySelector(".img-btn-next");
+        nextBtn.style.cssText = "right:" + calcImgToEdge + "px;"
+
+        let prevBtn = document.querySelector(".img-btn-prev");
+        prevBtn.style.cssText = "right:" + calcImgToEdge + "px;"
+    }
 }
