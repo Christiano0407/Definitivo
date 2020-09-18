@@ -70,7 +70,7 @@ nav {
     align-items: center;
 }
 .intro-text {
-    color: var(--color-secundario);
+    color: var(--color-light);
     font-size: 3rem;
 }
 .hide {
@@ -82,5 +82,11 @@ nav {
     display: inline-block;
 }
 .slider {
-    
+    background-color: var(--color-light);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
 }
