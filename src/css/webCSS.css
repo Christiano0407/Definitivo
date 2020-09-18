@@ -33,3 +33,54 @@ nav {
     justify-content: space-between;
     min-height: 10vh;
 }
+.nav-link {
+    display: flex;
+    list-style: none;
+}
+.nav-link li {
+    padding-left: 10rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#logo{
+    font-family: utopia-std,serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color:var(--color-light);
+}
+.big-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 5rem;
+    color: var(--color-light);
+}
+.intro{
+    background: var(--color-black);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text {
+    color: var(--color-secundario);
+    font-size: 3rem;
+}
+.hide {
+    background-color:var(--color-black);
+    overflow: hidden;
+}
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+.slider {
+    
+}
