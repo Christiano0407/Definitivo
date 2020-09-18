@@ -32,6 +32,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     min-height: 10vh;
+    cursor: pointer;
 }
 .nav-link {
     display: flex;
@@ -42,6 +43,7 @@ nav {
     font-size: 1.5rem;
     text-transform: uppercase;
     color: #fff;
+    cursor: pointer;
 }
 #logo{
     font-family: utopia-std,serif;
@@ -56,7 +58,7 @@ nav {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -30%);
-    font-size: 5rem;
+    font-size: 8rem;
     color: var(--color-light);
 }
 .intro{
@@ -83,7 +85,7 @@ nav {
     display: inline-block;
 }
 .slider {
-    background-color: var(--color-light);
+    background-color:#000000;
     position: fixed;
     top: 0;
     left: 0;
