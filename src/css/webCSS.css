@@ -41,6 +41,7 @@ nav {
     padding-left: 10rem;
     font-size: 1.5rem;
     text-transform: uppercase;
+    color: #fff;
 }
 #logo{
     font-family: utopia-std,serif;
@@ -59,7 +60,7 @@ nav {
     color: var(--color-light);
 }
 .intro{
-    background: var(--color-black);
+    background: #000000;
     position: fixed;
     top: 0;
     left: 0;
@@ -74,7 +75,7 @@ nav {
     font-size: 3rem;
 }
 .hide {
-    background-color:var(--color-black);
+    background-color:#000000;
     overflow: hidden;
 }
 .hide span {
