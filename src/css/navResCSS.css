@@ -74,7 +74,7 @@ border-bottom: 1px solid rgba(255,255,255,.1);
     display: flex;
 }
 .nav-list li {
-    line-height: 8rem;
+    line-height: 4rem;
     position: relative;
 }
 .sub-menu li {
@@ -111,6 +111,9 @@ border-bottom: 1px solid rgba(255,255,255,.1);
     background-color: #3e3e3e;
     z-index: 100;
     top: 12rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
 }
 .sub-menu::before {
     content: "";
@@ -119,6 +122,23 @@ border-bottom: 1px solid rgba(255,255,255,.1);
     left: 3rem;
     border: 1.2rem solid transparent;
     border-bottom-color: #044BD9;
+}
+.sub-menu .sub-menu::before {
+    top: .9rem;
+    left: -2.5rem;
+    border: 1.2rem solid transparent;
+    border-right-color:#044BD9;
+}
+.sub-menu .sub-menu {
+    border-top: none;
+    border-left: 3px solid #044BD9;
+    top: 0;
+    left: 100%;
+}
+.nav-list li:hover > .sub-menu {
+    top: 8rem;
+    opacity: 1;
+    visibility: visible;
 }
 /* END NAV CSS */
 
