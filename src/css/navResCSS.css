@@ -109,6 +109,16 @@ border-bottom: 1px solid rgba(255,255,255,.1);
     position: absolute;
     border-top: 3px solid #044BD9;
     background-color: #3e3e3e;
+    z-index: 100;
+    top: 12rem;
+}
+.sub-menu::before {
+    content: "";
+    position: absolute;
+    top: -2.5rem;
+    left: 3rem;
+    border: 1.2rem solid transparent;
+    border-bottom-color: #044BD9;
 }
 /* END NAV CSS */
 
