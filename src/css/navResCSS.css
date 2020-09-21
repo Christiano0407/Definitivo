@@ -91,6 +91,25 @@ border-bottom: 1px solid rgba(255,255,255,.1);
 .nav-list a:hover {
     color: #2B65D9;
 }
+.btn {
+    padding: 1.3rem;
+    display: inline-block;
+    background-color: var(--color-primario);
+    border: 2px solid #2B65D9;
+    border-radius: 5rem;
+    transition: background-color 650ms;
+}
+.btn:hover {
+    color: #044BD9;
+    background-color: rgba(0,0,0,.2);
+}
+.sub-menu {
+    width: 20rem;
+    display: block;
+    position: absolute;
+    border-top: 3px solid #044BD9;
+    background-color: #3e3e3e;
+}
 /* END NAV CSS */
 
 /* HERO */
