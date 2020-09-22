@@ -33,4 +33,8 @@ if(age >= 21) {
     console.log("Lo sentimos mucho!")
 
 } */
-
+/* 
+const schedule = ["Wake up", "Eat", "Film a Video", "watch thing", "Netflix"];
+ const film = schedule.indexOf("film a Video");
+console.log(schedule[film]);
+ */
