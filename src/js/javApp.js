@@ -22,3 +22,15 @@ toUpper(name); */
     console.log("Hola");
 };
 toUpper(); */
+
+/* const age = 18;
+
+if(age >= 21) {
+    console.log("Eres mayor de edad")
+}else if(age == 18){
+      console.log("Paga la entrada y ya!")
+}else {
+    console.log("Lo sentimos mucho!")
+
+} */
+
