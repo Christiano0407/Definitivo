@@ -62,7 +62,7 @@ section {
     animation: edit 1s ease-in-out;
  } 
 
- @keyframes edit {
+/*  @keyframes edit {
   0% {
   transform: translateX(6rem);
   }
@@ -72,7 +72,7 @@ section {
   100% {
    transform: translateX(-3rem);
   }
- }
+ } */
  
  .pelota4 {
     width: 5rem;
@@ -81,5 +81,29 @@ section {
     border-radius: 50%;
     margin: 5rem;
     padding: 1rem;
+    /* animation: rota 2s ease-in-out; */
  }
-/* transform: rotate | sesgar ! posición ! tamaño  */
+ /* @keyframes rota {
+     0% {
+     transform: rotate(0);
+     }
+     100% {
+         transform: rotate(180deg);
+     }
+ } */
+
+/*  transform: rotate | sesgar ! posición ! tamaño /
+           rotate(4deg) |skew(10deg) | translate() | scale() */
+
+
+/* .animate__animated.animate__bounce {
+    --animate-duration: 2s;
+    font-size: 3rem;
+      margin: 1rem auto;
+  } */
+/*   .animate__animated.animate__backInDown{
+     --animate-duration: 2s;;
+    text-align: center;
+    font-size: 5rem;
+    color: #2B65D9;
+  } */
