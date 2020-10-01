@@ -19,10 +19,12 @@ body {
     font-family: utopia-std,serif;
     font-weight: 400;
     font-style: normal;
+   /*  perspective: 20rem; */
+    /* perspective-origin: center; */
 }
 section {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
 }
 .pelota1{
     width: 5rem;
@@ -106,4 +108,48 @@ section {
     text-align: center;
     font-size: 5rem;
     color: #2B65D9;
+  } */
+  .section2 {
+      width: 100%;
+      height: 50vh;
+     /*  perspective: 20rem; */
+  }
+  .container {
+      border: 1px solid #2B65D9;
+  }
+  .cuadrado {
+      width: 10rem;
+      height: 10rem;
+      background-color: #F2AC29;
+      margin: 2rem auto;
+ /*      transform: translateX(3rem); */
+      /* transition: .1s; */
+      /* animation: rotate 1s ease-in-out; */
+     /*  transform: rotate(45deg);  */
+    /*  transform: rotate3d(x,y,z, rotate); */
+
+  }
+   .container:hover .cuadrado {
+   /* transform: rotate(90deg); */
+   /* transform: translateX(5rem); */
+   /* transform: translate(x,y); */
+   /* transform: translate(5rem, -5rem); */
+    /* transform:translateZ(4rem); */
+  } 
+/*   @keyframes rotate {
+      0% {
+          transform: rotate(0deg);
+      }
+      25% {
+          transform: rotate(45deg);
+      }
+      50% {
+          transform: rotate(90deg);
+      }
+      75% {
+          transform: rotate(180deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
   } */
