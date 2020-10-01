@@ -112,7 +112,7 @@ section {
   .section2 {
       width: 100%;
       height: 50vh;
-     /*  perspective: 20rem; */
+     /*  perspective: 20rem; */ 
   }
   .container {
       border: 1px solid #2B65D9;
@@ -135,6 +135,10 @@ section {
    /* transform: translate(x,y); */
    /* transform: translate(5rem, -5rem); */
     /* transform:translateZ(4rem); */
+    /* transform: translate3d(0, 0, 5rem); */
+   /*  transform: scale(0 = 0% del tamaño - 1 = 100%); */
+    /* transform: scale(2); */
+   /*  transform: scale(.5); */
   } 
 /*   @keyframes rotate {
       0% {
