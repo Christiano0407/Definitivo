@@ -143,6 +143,13 @@ section {
    /* transform: skew(x, y);
    transform: skew(45deg, 45deg); */
    /* transform: skew(45deg); */
+  /*  transform-origin: center; */
+   /* transform-origin: x y z; */
+   /* transform-origin: 50% 50%; */
+   /* transform-origin: bottom; 
+   transform: scaleY(2); */
+  /*  transform-origin: left;
+   transform: translateX(5rem); */
   } 
 /*   @keyframes rotate {
       0% {
