@@ -127,7 +127,18 @@ section {
       /* animation: rotate 1s ease-in-out; */
      /*  transform: rotate(45deg);  */
     /*  transform: rotate3d(x,y,z, rotate); */
-
+    animation-name:cuadros;
+    animation-duration: 1s;
+   /*  animation-delay: 1; */
+   /* animation-iteration-count: infinite; cuantas veces quieres que haga la animación */
+   animation-timing-function: ease-in-out;
+   /* animation-timing-function: cubic-bezier(); */
+   /* animation-direction: reverse; */
+  /*  animation-direction: alternate; */
+ /*  animation-fill-mode: ; Cómo quiero que se quede mi animación, después, de haber terminado... */
+     /* animation-fill-mode: forwards; */
+     /* animation-play-state: paused; se configura en modo pausa / podemos ponerlo en el hover para que pause una animación*/
+    
   }
    .container:hover .cuadrado {
    /* transform: rotate(90deg); */
@@ -168,3 +179,11 @@ section {
           transform: rotate(360deg);
       }
   } */
+/* @keyframes cuadros {
+    0% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;    
+    }
+} */
