@@ -128,13 +128,14 @@ section {
       /* animation: rotate 1s ease-in-out; */
      /*  transform: rotate(45deg);  */
     /*  transform: rotate3d(x,y,z, rotate); */
-    animation-name:cuadros;
-    animation-duration: 1s;
+    animation-name:cuadros, rebote;
+    animation-duration: 1s, 2s;
    /*  animation-delay: 1; */
    /* animation-iteration-count: infinite; cuantas veces quieres que haga la animación */
-  /*  animation-timing-function: ease-in-out; */
+   animation-timing-function: ease-in-out; 
   /* animation-timing-function: steps(10); pasos animación */
-   /* animation-timing-function: cubic-bezier(); */
+    /* animation-timing-function: cubic-bezier(1,1,1,1); De positivos a negativos  de -1 hasta 1 */
+    /*  animation-timing-function: cubic-bezier(0,1,.34,.13)  */
    /* animation-direction: reverse; */
   /*  animation-direction: alternate; */
  /*  animation-fill-mode: ; Cómo quiero que se quede mi animación, después, de haber terminado... */
@@ -184,13 +185,24 @@ section {
  @keyframes cuadros {
     0% {
   /*   opacity: 1; */
-  transform: translateX(0);
+  transform: translateX(0) scale(0);
+    }
+    25% {
+        transform: translateX(20rem) scale(1);
     }
     50% {
-        transform: translateX(5rem);
-    }
+        transform: translateX(40rem) scale(2);
+    } 
     100% {
     /* opacity: 0;     */
-    transform: translateX(10rem);
+    transform: translateX(0) scale(1) scale(1);
+    }
+}
+@keyframes rebote {
+    from {
+     opacity: 1;
+    }
+    to {
+    opacity: 0;
     }
 } 
