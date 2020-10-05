@@ -141,7 +141,7 @@ section {
  /*  animation-fill-mode: ; Cómo quiero que se quede mi animación, después, de haber terminado... */
      /* animation-fill-mode: forwards; */
      /* animation-play-state: paused; se configura en modo pausa / podemos ponerlo en el hover para que pause una animación*/
-    
+    /* will-change: auto; Va a cambiar / optimiza las transformaciones*/
   }
    .container:hover .cuadrado {
    /* transform: rotate(90deg); */
