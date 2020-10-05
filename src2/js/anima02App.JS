@@ -5,6 +5,7 @@ const playButton = document.getElementById(`play`);
 const stopButton = document.getElementById(`stop`);
 const pauseButton = document.getElementById(`pause`);
 const reverseButton = document.getElementById(`reverse`);
+const cancelButton = document.getElementById(`cancel`);
 
 /* element.animate(keyframes = [], option = []) */
 const animation = pelota.animate([
@@ -40,3 +41,6 @@ animation.cancel();
 reverseButton.addEventListener(`click`, (event) => {
 animation.reverse();
 });
+cancelButton.addEventListener(`click`, (event) => {
+    animation.cancel();
+})
