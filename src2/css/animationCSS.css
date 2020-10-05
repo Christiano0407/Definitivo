@@ -1,0 +1,132 @@
+body{
+    background: black;
+}
+.container{
+    width: 650px;
+    height: 400px;
+    margin: 100px auto;
+    perspective: 100px;
+}
+
+.barra{
+    width: 50px;
+    height: 350px;
+    display: inline-block;
+    margin-left: 50px;
+    transition: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;			
+    animation-duration: 3s;
+}
+
+.barra.a{
+    background: black;
+    border: 1px solid white;
+    animation-name: barra_a;
+
+}
+
+.barra.b{
+    background: black;
+    border: 1px solid orange;
+    animation-name: barra_b;
+}
+
+@keyframes barra_a{
+    from{ transform: translateZ(0px);  z-index: 3;}
+    
+    17%{ transform: translateZ(10px);  z-index: 3;}
+
+    33%{ transform: translateZ(10px) translateX(100px); z-index: 3; }
+
+    50%{ transform: translateZ(0px) translateX(100px);  z-index: 1;}
+
+    67%{ transform: translateZ(0px) translateX(100px);  z-index: 1; }
+
+    83%{ transform: translateZ(0px) translateX(0px); z-index: 1;}
+
+    to{ transform: translateZ(0px) translateX(0px); z-index: 1;}
+
+}
+@keyframes barra_b{
+    from{  transform: translateZ(0px); z-index: 1;}
+
+    17%{ transform: translateZ(0px); z-index: 1;}
+
+    33%{ transform: translateZ(0px) translateX(-100px); z-index: 1;}
+
+    50%{ transform: translateZ(0px) translateX(-100px); z-index: 1;}
+
+    67%{ transform: translateZ(10px) translateX(-100px); z-index: 3;}
+
+    83%{ transform: translateZ(10px) translateX(0px); z-index: 3;}
+
+    to{ transform: translateZ(0px) translateX(0px); z-index: 1;}
+}
+
+@keyframes pelota{
+    from{
+        width: 50px;
+        height: 350px;
+        border-radius: 0;
+    }
+    to{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+
+    }
+}
+
+@keyframes caida{
+
+    from{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transform: translateY(0);
+    }
+    to{
+
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transform: translateY(300px);
+    }
+}
+
+
+@keyframes rebotar{
+
+    from{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transform: translateY(300px) scale(1.1, 0.9);;
+        
+    }
+    to{
+
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transform: translateY(0) scale(1);
+        
+    }
+}
+
+@keyframes mover{
+    from{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transform: translateY(300px);
+    }
+    to{
+
+        width: 50px;
+        height: 350px;
+        border-radius: 0;
+        transform: translateY(0);
+    }
+}
