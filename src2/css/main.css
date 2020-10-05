@@ -120,6 +120,7 @@ section {
   .cuadrado {
       width: 10rem;
       height: 10rem;
+      border-radius: 50%;
       background-color: #F2AC29;
       margin: 2rem auto;
  /*      transform: translateX(3rem); */
@@ -131,7 +132,8 @@ section {
     animation-duration: 1s;
    /*  animation-delay: 1; */
    /* animation-iteration-count: infinite; cuantas veces quieres que haga la animación */
-   animation-timing-function: ease-in-out;
+  /*  animation-timing-function: ease-in-out; */
+  /* animation-timing-function: steps(10); pasos animación */
    /* animation-timing-function: cubic-bezier(); */
    /* animation-direction: reverse; */
   /*  animation-direction: alternate; */
@@ -179,11 +181,16 @@ section {
           transform: rotate(360deg);
       }
   } */
-/* @keyframes cuadros {
+ @keyframes cuadros {
     0% {
-    opacity: 1;
+  /*   opacity: 1; */
+  transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5rem);
     }
     100% {
-    opacity: 0;    
+    /* opacity: 0;     */
+    transform: translateX(10rem);
     }
-} */
+} 
