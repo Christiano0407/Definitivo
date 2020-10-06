@@ -26,7 +26,7 @@ body {
   /*   animation-name: in, out;
     animation-duration: .10s, .8s;
     animation-fill-mode: forwards; */
-    animation: out .8s forwards;
+    animation: in .8s forwards;
 }
 @keyframes in {
     0% {
