@@ -46,12 +46,14 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    animation: bells 1s ease-in-out;
 }
 .notification i::before{
     display: block;
 }
 .notification i::after{
-content: "1";
+ content: attr(data-count);
+/* content: "1"; */
 font-size: 1rem;
 font-weight: bold;
 display: flex;
@@ -65,6 +67,14 @@ color: #fff;
 position: absolute;
 top: 0;
 right: 0;
+opacity: 0;
+transition: .3s;
+transform: scale(.5);
+will-change: opacity, transform;
+}
+.notification.show-count::after{
+opacity: 1;
+transform: scale(1);
 }
  .notification .btn {
 text-align: center;
@@ -77,4 +87,22 @@ cursor: pointer;
 box-shadow: 0 -.2rem rgba(0, 0, 0, 0.2);
 outline: 0;
 margin: .8rem .8rem;
+}
+.btn:active{
+    transform: scale(.1);
+}
+
+@keyframes bells {
+    0% {
+    transform: rotate(35deg);
+    }
+    25% {
+    transform: rotate(0deg);
+    }
+    50% {
+    transform: rotate(-35deg);
+    }
+    100% {
+    transform: rotate(0deg);
+    }
 }
