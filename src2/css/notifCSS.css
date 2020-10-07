@@ -13,4 +13,68 @@ html{
 body {
     width: 100%;
     height: 100vh;
+    background-image: url(../img/andrae-ricketts-0_la3_Slfwk-unsplash.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover
+}
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+   /*  justify-content: space-between;
+    align-items: center;  */
+    background-color: #000000;
+    color: #fff;
+}
+.notification {
+    /* color: #fff; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .notification:hover {
+    display: block;
+} */
+ .notification i {
+    font-size: 2rem;
+    padding: .5rem .5rem;
+    margin: .5rem .8rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.notification i::before{
+    display: block;
+}
+.notification i::after{
+content: "1";
+font-size: 1rem;
+font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: center;
+min-width: 1.4rem;
+height: 1.4rem;
+background-color: #ff4600;
+border-radius: 50%;
+color: #fff;
+position: absolute;
+top: 0;
+right: 0;
+}
+ .notification .btn {
+text-align: center;
+padding: .5rem .5rem;
+color: #000000;
+border: none;
+background-color: #fff;
+border-radius: .5rem;
+cursor: pointer;
+box-shadow: 0 -.2rem rgba(0, 0, 0, 0.2);
+outline: 0;
+margin: .8rem .8rem;
 }
