@@ -46,10 +46,12 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    animation: bells 1s ease-in-out;
+    
 }
 .notification i::before{
     display: block;
+    animation: bells 1s ease-in-out;
+    transform-origin:top;
 }
 .notification i::after{
  content: attr(data-count);
