@@ -13,4 +13,15 @@ html {
 body {
     width: 100%;
     height: 100vh;
+    background-image: url(../img/aud2.jpg);
+    background-size: cover;
+}
+header {
+    height: 5.2rem;
+    width: 100%;
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20rem;
 }
