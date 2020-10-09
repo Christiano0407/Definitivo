@@ -42,7 +42,7 @@ body {
    grid-row-gap: ; */
    
    width: 100%;
-   height: 50vh;
+   height: 100vh;
 
    /* AREA-Lo que corresponda o dentro de las "" */
   /*  grid-template-areas: "header header"
