@@ -29,33 +29,64 @@ body {
    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   /*  grid-template-rows: 1fr 1fr 1fr; */
  /*   Funciones Y RESPONSE*/
-   grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: repeat(3, minmax(20rem, 1fr));
+  /*  grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(3, 1fr); */
+   /* filas/columnas */
+   grid-template: 10rem 1fr 15rem / 20rem 1fr;
+  /*  grid-template-rows: repeat(3, minmax(10rem, 1fr)); */
   
    /* SEPARACIÓN */
    grid-gap: .2rem;
   /*  grid-gap: rows columns; */
   /*  grid-column-gap: ;
    grid-row-gap: ; */
-}
+   
+   width: 100%;
+   height: 50vh;
+
+   /* AREA-Lo que corresponda o dentro de las "" */
+  /*  grid-template-areas: "header header"
+                        "container container"
+                        "footer footer"; 
+                        Los dos espacios o repeetición son 2 columnas */
+    grid-template-areas: "header header"
+                         "left  mains"
+                         "footer footer";                    
+                    }
 .item {
     background-color: lightseagreen;
     padding: .5rem;
     border: .1rem solid red;
 }
-.item h1 {
-    color: #fff;
+.header {
+ grid-area: header;
+ background-color: var(--color-principal);
 }
+.left {
+grid-area: left;
+background-color: var(--color-secundario);
+}
+.mains {
+grid-area: mains;
+background-color: var(--color-terciario);
+}
+.footer {
+grid-area: footer;
+background-color: var(--color-principal);
+}
+/* .item h1 {
+    color: #fff;
+} */
 /* PSEUDO-CLASES */
 
 /*  Me permite escoger un elemento. Además, trabajar los elementos por separado */
-.item:nth-of-type(4) {
+/* .item:nth-of-type(4) {
     background-color: var(--color-principal);
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-}
+} */
 /* selecciona el último elemento
 .item:last-child {
     background-color: khaki;
