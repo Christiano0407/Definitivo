@@ -29,7 +29,7 @@ header {
     max-width: 105rem;
     height: 6.5rem;
     margin: 0 auto;
-    background-color: var(--color-principal);
+    background-color: var(--color-black);
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
@@ -70,4 +70,52 @@ header {
 }
 .link-activo {
     color: #fff;
+}
+
+/* INSTAGRAM  */
+.instagram-grid{
+    max-width: 95.5rem;
+    margin: 0 auto;
+    padding:  2.8rem 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.8rem;
+}
+.instagram-link-container {
+    width: 100%;
+    position: relative;
+}
+.instagram-container-image {
+    margin: 0;
+}
+.instagram-container-image img {
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+.instagram-capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.instagram-capa:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+.instagram-capa-text {
+    color: transparent;
+    margin: 0;
+    height: 100%;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instagram-capa-text:hover {
+    color: #fff;
+}
+.instagram-capa-text span {
+    margin:  0 1.5rem;
 }
