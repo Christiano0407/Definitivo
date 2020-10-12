@@ -119,3 +119,23 @@ header {
 .instagram-capa-text span {
     margin:  0 1.5rem;
 }
+/* Media  */
+
+@media screen and (max-width: 768px ) {
+    .instagram-grid {
+        grid-gap: .3rem;
+        padding: 1rem .5rem;
+        flex-wrap: wrap;
+    }
+    .instagram-capa-text {
+        flex-direction: column;
+    }
+    .instagram-capa-text span {
+        margin: .1rem 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .instagram-capa-text {
+        font-size: .9rem;
+    }
+}
