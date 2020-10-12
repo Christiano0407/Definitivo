@@ -29,6 +29,18 @@ body {
     grid-template-rows: repeat(2, 20rem);
     grid-gap: .2rem;
     flex-wrap: wrap; 
+
+    /* grid-auto-flow: column; Grid implícito */
+    /* grid-auto-rows: auto; */
+   /*  grid-auto-columns: 1fr; */
+
+  /*  ALINEAR CONTENIDO */
+  /* horizontal */
+ /*  justify-items: start end center strech; */
+  /* vertical */
+ /*  align-items: flex-end; */
+ /* Alinear mismo */
+ /* align-self: ; */
 }
 .item {
     background-color: lightseagreen;
